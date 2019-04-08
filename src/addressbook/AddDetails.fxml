@@ -41,7 +41,7 @@
            GridPane.rowIndex="1" >
     </Label>
     <!-- Add Name Text Field -->
-    <TextField fx:id="nameField" prefHeight="40" 
+    <TextField fx:id="Name" prefHeight="40" 
                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
 
@@ -80,7 +80,7 @@
        <HBox spacing="20" maxWidth="800" maxHeight="300" alignment="BASELINE_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
             <children>
 
-                <Label styleClass="radio-button-title-label" GridPane.columnIndex="1" GridPane.rowIndex="6">Gender</Label>
+                <Label styleClass="radio-button-title-label">Gender</Label>
 
                 <RadioButton fx:id="Male" selected="true" text="Male" styleClass="custom-jfx-radio-button">
                     <toggleGroup>
@@ -93,10 +93,27 @@
                                 text="Other" toggleGroup="$toggleGroup" styleClass="custom-jfx-radio-button"/>
             </children>
        </HBox>
+       
+       <HBox spacing="20" maxWidth="800" maxHeight="300" alignment="BASELINE_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
+            <children>
+
+                <Label styleClass="radio-button-title-label">Relationship</Label>
+
+                <RadioButton fx:id="Married" selected="true" text="Married" styleClass="custom-jfx-radio-button">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup1"/>
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="Unmarried" selected="false"
+                                text="unmariied" toggleGroup="$toggleGroup1" styleClass="custom-jfx-radio-button"/>
+                <RadioButton fx:id="Divorcee" selected="false"
+                                text="Divorcee" toggleGroup="$toggleGroup1" styleClass="custom-jfx-radio-button"/>
+            </children>
+       </HBox>
     <!-- Add Submit Button -->
     <Button fx:id="Save" text="Save"
             prefWidth="100" prefHeight="40" defaultButton="true"
-            GridPane.columnIndex="0" GridPane.rowIndex="7"
+            GridPane.columnIndex="0" GridPane.rowIndex="8"
             GridPane.columnSpan="2" GridPane.rowSpan="1"
             GridPane.halignment="CENTER"
             onAction="#handleSaveButton">

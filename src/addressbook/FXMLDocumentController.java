@@ -33,7 +33,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TableView<PersonTableData> table;
     
-    private ObservableList<PersonTableData> data = FXCollections.observableArrayList();
+    public static ObservableList<PersonTableData> data = FXCollections.observableArrayList();
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
