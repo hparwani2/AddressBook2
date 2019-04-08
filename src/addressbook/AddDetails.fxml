@@ -77,12 +77,12 @@
     <TextField fx:id="PhoneNo" prefHeight="40" 
                    GridPane.columnIndex="1" GridPane.rowIndex="5"/>
 
-       <HBox spacing="20" maxWidth="800" maxHeight="300" alignment="BASELINE_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
+       <HBox spacing="65" maxWidth="800" maxHeight="300" alignment="BASELINE_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
             <children>
 
                 <Label styleClass="radio-button-title-label">Gender</Label>
 
-                <RadioButton fx:id="Male" selected="true" text="Male" styleClass="custom-jfx-radio-button">
+                <RadioButton fx:id="Male" selected="true" text="Male"  styleClass="custom-jfx-radio-button">
                     <toggleGroup>
                         <ToggleGroup fx:id="toggleGroup"/>
                     </toggleGroup>
@@ -94,7 +94,7 @@
             </children>
        </HBox>
        
-       <HBox spacing="20" maxWidth="800" maxHeight="300" alignment="BASELINE_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
+       <HBox spacing="40" maxWidth="800" maxHeight="300" alignment="BASELINE_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
             <children>
 
                 <Label styleClass="radio-button-title-label">Relationship</Label>

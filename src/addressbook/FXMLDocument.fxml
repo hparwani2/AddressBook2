@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" styleClass="root" stylesheets="lankydan/tutorials/fxml/css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.FXMLDocumentController">
+<AnchorPane maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" styleClass="root" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.FXMLDocumentController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
          <children>
             <TableView fx:id="table" prefHeight="255.0" prefWidth="501.0" VBox.vgrow="ALWAYS">
                 <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
@@ -56,7 +56,7 @@
         	</TableColumn>
               </columns>
             </TableView>
-             <AnchorPane VBox.vgrow="ALWAYS" maxHeight="50.0" maxWidth="200.0" minHeight="50.0" minWidth="200.0" prefHeight="50.0" prefWidth="200.0">
+             <AnchorPane VBox.vgrow="ALWAYS" maxHeight="45.0" maxWidth="200.0" minHeight="45.0" minWidth="200.0" prefHeight="45.0" prefWidth="200.0">
                <children>
                    <Button fx:id="AddButton" layoutX="371.0" layoutY="2.0" mnemonicParsing="false" onAction="#Add" text="Add" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" prefHeight="30.0" prefWidth="100.0"/>
                    <Button fx:id="UpdateButton" layoutX="371.0" layoutY="2.0" mnemonicParsing="false" text="Update" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="120.0"  prefHeight="30.0" prefWidth="100.0"/>
