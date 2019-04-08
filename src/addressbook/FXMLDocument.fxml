@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" styleClass="root" stylesheets="lankydan/tutorials/fxml/css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" prefHeight="255.0" prefWidth="501.0" VBox.vgrow="ALWAYS">
+                <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+              <columns>
+                <TableColumn prefWidth="98.0" text="Name">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="Name" />
+       				</cellValueFactory>
+        		</TableColumn>
+                <TableColumn prefWidth="111.0" text="PhoneNo">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="PhoneNo" />
+       				</cellValueFactory>
+        		</TableColumn>
+                 <TableColumn  prefWidth="112.0" text="AddressLine1">
+                	<cellValueFactory>
+                		 <PropertyValueFactory property="AddressLine1" />
+       				</cellValueFactory>
+        	</TableColumn>
+                <TableColumn  prefWidth="112.0" text="AddressLine2">
+                	<cellValueFactory>
+                		 <PropertyValueFactory property="AddressLine2" />
+       				</cellValueFactory>
+        	</TableColumn>
+                  <TableColumn prefWidth="94.0" text="Relationship">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="Relationship" />
+       			</cellValueFactory>
+        	</TableColumn>
+                  <TableColumn  prefWidth="72.0" text="Gender">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="Gender" />
+       			</cellValueFactory>
+        	</TableColumn>
+                <TableColumn  prefWidth="115.0" text="EmailId">
+                	<cellValueFactory>
+                		<PropertyValueFactory property="EmailId" />
+       			</cellValueFactory>
+        	</TableColumn>
+              </columns>
+            </TableView>
+             <AnchorPane VBox.vgrow="ALWAYS" maxHeight="50.0" maxWidth="200.0" minHeight="50.0" minWidth="200.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                   <Button fx:id="AddButton" layoutX="371.0" layoutY="2.0" mnemonicParsing="false" onAction="#Add" text="Add" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" prefHeight="30.0" prefWidth="100.0"/>
+               </children>
+             </AnchorPane>
+         </children>
+        </VBox>
+    </children>
+</AnchorPane>
+ 
